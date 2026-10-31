@@ -1,0 +1,8 @@
+{
+  "name": "AcousticComms - Acoustic Data Communication System",
+  "description": "Python prototype and interactive workbench for acoustic data communication across nearby laptops using text-to-speech (pyttsx3) and speech recognition with ambient noise filtering.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

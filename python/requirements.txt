@@ -1,0 +1,39 @@
+# ==============================================================================
+# Dependencies for Python Acoustic Communication Prototype
+# ==============================================================================
+
+# Text-to-Speech Engine (Transmitter / sender.py)
+# Works offline; uses SAPI5 (Windows), NSSpeechSynthesizer (macOS), or espeak (Linux)
+pyttsx3>=2.90
+
+# Speech Recognition & Audio Capture (Receiver / receiver.py)
+SpeechRecognition>=3.10.0
+
+# Cross-platform Audio I/O binding to PortAudio (Required for microphone stream)
+PyAudio>=0.2.14
+
+# Optional: Sounddevice & NumPy for advanced acoustic modem (FSK / tones)
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# Optional: Terminal coloring for clear visual status logs
+colorama>=0.4.6
+
+# ==============================================================================
+# OS-SPECIFIC INSTALLATION NOTES (CRITICAL):
+# ==============================================================================
+#
+# WINDOWS:
+#   If "pip install pyaudio" fails due to Microsoft Visual C++ build tools:
+#     pip install pipwin
+#     pipwin install pyaudio
+#
+# MACOS (Homebrew):
+#   brew install portaudio
+#   pip install pyaudio
+#
+# UBUNTU / DEBIAN LINUX:
+#   sudo apt-get update
+#   sudo apt-get install python3-pyaudio portaudio19-dev espeak espeak-ng -y
+#   pip install -r requirements.txt
+# ==============================================================================
